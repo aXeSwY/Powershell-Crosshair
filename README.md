@@ -10,5 +10,5 @@ A simple PowerShell crosshair overlay with a GUI and INI-saved configurations. B
 You can download, extract, and run the crosshair overlay directly to your Desktop by pasting this single command into PowerShell:
 
 ```powershell
-irm "[https://raw.githubusercontent.com/aXeSwY/Powershell-Crosshair/refs/heads/main/Crosshair.zip](https://raw.githubusercontent.com/aXeSwY/Powershell-Crosshair/refs/heads/main/Crosshair.zip)" -OutFile "~\Desktop\Crosshair.zip"; Expand-Archive "~\Desktop\Crosshair.zip" -DestinationPath "~\Desktop\Crosshair" -Force; rm "~\Desktop\Crosshair.zip"; cd "~\Desktop\Crosshair"; powershell -ExecutionPolicy Bypass -File ".\Crosshair.ps1"
+iwr "https://raw.githubusercontent.com/aXeSwY/Powershell-Crosshair/main/Crosshair.zip" -OutFile "$HOME\Desktop\C.zip"; Expand-Archive "$HOME\Desktop\C.zip" "$HOME\Desktop\C" -Force; rm "$HOME\Desktop\C.zip"; cd "$HOME\Desktop\C"; powershell -ep Bypass -File .\Crosshair.ps1
 
